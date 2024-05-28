@@ -36,7 +36,7 @@ Data engineering is divided into two parts.
 
 [Query Tool : PostgreSQL ver 16.3](https://www.postgresql.org/)
 
-[Table creation script ](EmployeeSQL/Table schema_query/Table_Schema.sql)
+[Table creation script](EmployeeSQL/Table schema_query/Table_Schema.sql)
 
 ## Order of creating tables and importing data from CSV files 
 1. Department
