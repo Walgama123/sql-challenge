@@ -3,7 +3,10 @@
 SELECT	e.emp_no,		
 		e.last_name,
 		e.first_name,
-		e.sex,
+		CASE 
+			WHEN e.sex='M' THEN 'Male'
+			WHEN e.sex='F' THEN 'Female'
+		END as gender,
 		s.salary
 FROM employee e INNER JOIN empployee_salary s ON e.emp_no=s.emp_no
 ORDER BY e.emp_no;
@@ -38,7 +41,10 @@ ORDER BY em.emp_no;
 --List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 SELECT	first_name,
 		last_name,
-		sex
+		CASE 
+			WHEN sex='M' THEN 'Male'
+			WHEN sex='F' THEN 'Female'
+		END as gende
 FROM	employee
 WHERE	first_name='Hercules'
 AND		last_name  LIKE 'B%'
